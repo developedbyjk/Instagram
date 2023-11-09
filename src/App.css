@@ -1,0 +1,187 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* overflow: hidden; */
+}
+
+
+/* STYLES FOR HEADER COMPONENTS */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #C6C6C6;
+  padding: 15px;
+}
+.header .logo img{ 
+  height: 40px
+}
+
+.hearticon img{
+  height: 25px;
+  width: 25px;
+  margin: 0px 10px;
+
+}
+
+.searchbar input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  background-color:  #EFEFEF;
+  border-radius: 5px;
+  padding: 5px;
+  width: auto;
+  height: 25px;
+  margin: 0px 10px;
+
+}
+
+/* .header .profilepic img{
+  padding-right: 10px; 
+  width: 34px;
+  border-radius:50%;
+} */
+
+
+
+/* THIS STYLE IS FOR STORY COMPONENETS  */
+.stories {
+  width: 100%; /* Set the width of the container */
+  /* Hide the horizontal scrollbar */
+  /* overflow-x: hidden; */
+  overflow : scroll;
+}
+
+.stories-content {
+  display: flex; /* Use flexbox layout for the content */
+  white-space: nowrap; /* Prevent content from wrapping */
+
+}
+
+.story {
+  flex: 0 0 auto; /* Allow the stories to grow and shrink within the flex container */
+  width: 60px; /* Set the width of each story item */
+  height: 60px; /* Set the height of each story item */
+  border-radius: 50%;
+  margin: 10px; /* Add spacing between story items (adjust as needed) */
+  /* background-color: #EFEFEF;  */
+  /* Set background color for the story items */
+  background: radial-gradient(circle at 80% 0%, #fdf497 5%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#fd5949 80%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  position: relative;
+
+}
+
+.story img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+/* FOR POSTED USER DETAILS */
+.userinfo {
+  display: flex;
+  padding: 10px;
+}
+
+.userinfo .photo img{
+  height:34px;
+  width: 34px;
+  border-radius:50%;
+  background-size: contain;
+}
+
+.userinfo .name p{
+  margin: 0px 0px 0px 10px;
+}
+
+/* FOR USER POST */
+.userpost img{
+  width: 100%;
+}
+
+/* FOR LIKE COMMENT AND SHARE */
+.userlcs{
+  margin-left: 10px;
+}
+.userlcs img{
+  height:25px;
+  margin:5px;
+}
+
+/* FOR LIKES COUNT */
+.userlikescounts P {
+
+  font-weight: bold;
+  margin: 0px 10px
+}
+
+/* FOR USER CAPTION */
+.usercaption{
+   margin: 0px 10px
+}
+
+/* FOR FOOTER SECTION */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px; */
+  padding: 10px;
+  position: fixed; /* Add this line */
+  bottom: 0; /* Add this line */
+  width: 100%; 
+background-color: whitesmoke;
+cursor: pointer;
+
+ 
+}
+
+
+
+footer a{
+  text-decoration: none;
+  color: black;
+} 
+.footer img{
+height: 20px;
+width: 20px;
+
+}
+
+/* STYLE FOR SEARCH */
+.boxcontainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+ /* background-color: yellow; */
+}
+.box{
+  display: inline-block;
+  height: 150px;
+  width: ;
+  background-color: aliceblue;
+  border: 2px solid white;
+  
+}
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width :600px) {
+  .searchbar{
+    display: none;
+  }
+}
